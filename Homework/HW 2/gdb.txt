@@ -1,0 +1,38 @@
+cs30fa21cmi@pi-cluster-114:~/git/A2-gdb$ gdb ./a.out
+GNU gdb (Raspbian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "arm-linux-gnueabihf".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./a.out...done.
+(gdb) list
+1       #include <stdio.h>
+2       #include <string.h>
+3
+4       int main(int argc, char **argv){
+5         int sumIt = 0;
+6         char someStr[] = "Redstone is no substitute for good old C!\n";
+7         int len=strlen(someStr);
+8         int i;
+9         for (i = 0; i< 1000; i++){
+10          sumIt += someStr[i % len];
+(gdb) break 10
+Breakpoint 1 at 0x104d8: file loop.c, line 10.
+(gdb) condition 1 (i==500)
+(gdb) run
+Starting program: /home/linux/ieng6/cs30fa21c/cs30fa21cmi/git/A2-gdb/a.out
+
+Breakpoint 1, main (argc=1, argv=0xfffeeeb4) at loop.c:10
+10          sumIt += someStr[i % len];
+(gdb) p /x sumIt
+$1 = 0xb17a
