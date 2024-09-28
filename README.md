@@ -1,6 +1,6 @@
 # CSE30: Computer Organization & Systems Programming (Fall 2021, UCSD)
 
-This repository contains coursework from **CSE30: Computer Organization & Systems Programming**, which I took in Fall 2022 at UC San Diego. The course covers fundamental concepts of computer organization, low-level programming, and systems programming using C.
+This repository contains coursework from **CSE30: Computer Organization & Systems Programming**, which I took in Fall 2021 at UC San Diego. The course covers fundamental concepts of computer organization, low-level programming, and systems programming using C.
 
 ## Contents:
 
