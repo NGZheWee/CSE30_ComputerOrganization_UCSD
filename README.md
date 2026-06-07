@@ -19,4 +19,6 @@ This repository contains coursework from **CSE30: Computer Organization & System
 - **Homework**: You can find all homework assignments under the `Homework/` directory, each containing relevant code and documentation that explores topics like memory management, assembly programming, and systems-level operations.
 
 
-Explore the coursework to see implementations of low-level programming and systems programming techniques, focusing on how software interacts with hardware.
+## Academic Integrity Note
+
+This repository contains my own coursework submissions and related learning artifacts, shared for portfolio review only; do not copy or submit this material for active or future coursework, and follow your institution's academic integrity policies.
